@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app = "app">
+  <head>
+    <title>Angular 1.2 &amp; React</title>
+    <link rel="stylesheet" href="../../elements/dist/css/elements.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.5/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.5/react-dom.js"></script>
+
+    <script>
+      angular.module('app', ['compounds-ng']);
+    </script>
+
+    <script src="../dist/pearson-compounds-ng.js"></script>
+  </head>
+  <body>
+    <compound>
+      <Button>Hello Better Ng</Button>
+    </compound>
+    <compound>
+      <Button type="primary">Hello Better Ng</Button>
+    </compound>
+    <compound>
+      <Button type="link">Hello Better Ng</Button>
+    </compound>
+    <br/><br/>
+    <compound>
+      <div>
+        Small Buttons<br/>
+        <Button size="small">Hello Better Ng</Button>
+        <Button size="small" type="primary">Hello Better Ng</Button>
+        <Button size="small" type="link">Hello Better Ng</Button>
+      </div>
+    </compound>
+    <br/><br/>
+    <compound>
+      <div>
+        Large Buttons<br/>
+        <Button size="large">Hello Better Ng</Button>
+        <Button size="large" type="primary">Hello Better Ng</Button>
+        <Button size="large" type="link">Hello Better Ng</Button>
+      </div>
+    </compound>
+    <compound>
+      <Card>
+        <CardHeader>Jane Doe</CardHeader>
+        <CardContent>
+          <address>
+            123 Main Street<br />
+            Anywhere, USA
+          </address>
+        </CardContent>
+      </Card>
+    </compound>
+    The following is a demo of wrapping to create two compounds inside on directive.  It also demonstrates the ability to not swap to non-inline styling.
+    <br/>
+    <compound>
+      <span>
+        <Label>This is the default label.</Label>
+        <Label type="secondary">This is a secondary label.</Label>
+      </span>
+    </compound>
+  </body>
+</html>

@@ -14,7 +14,7 @@ Your application **will** need to include both Angular (at least 1.2) and React 
 #### With webpack
 
 Include the module definition in your source
-`require('pearsone-cmpounds-ng')`
+`require('pearson-compounds-ng')`
 
 #### Without Webpack
 
@@ -34,6 +34,6 @@ This will add the `<compound />` directive, which can then be used as follows:
 
 Anything inside the `<compound />` directive will be treated as a React Component, and handed off to a custom ReactDOM.render based parser.
 
-This means that naything inside the directive **MUST** have a single root.  You can wrap multiple components in `<div />` or `<span />` tags to get to a single root element.  This markup is more or less treated as if it was JSX, but the change from 'class' to 'className' is handled for you.
+This means that anything inside the directive **MUST** have a single root.  You can wrap multiple components in `<div />` or `<span />` tags to get to a single root element.  This markup is more or less treated as if it was JSX, but the change from 'class' to 'className' is handled for you.
 
 This directive will **ONLY** render components from **pearson-compounds**.

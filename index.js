@@ -32,7 +32,7 @@ function createEls(contents, root){
     return;
   }
   else if(root && contents.length != 1){
-    throw 'Connot initialize, compounds must have a single internal root element';
+    throw 'Cannot initialize, compounds must have a single internal root element';
     return;
   }
   else{

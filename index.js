@@ -65,7 +65,7 @@ function nodeNameToComp(nn){
   return compMap[nn] || nn;
 }
 
-mod.factory('Reactor', ['$timeout', function($timeout){
+mod.factory('Reactor', [function(){
 
   return {
     render: function(el){

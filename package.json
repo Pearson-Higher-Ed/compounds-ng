@@ -42,13 +42,15 @@
     "style-loader": "^0.13.0",
     "surge": "^0.17.4",
     "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.1",
-    "pearson-elements": "Pearson-Higher-Ed/elements",
-    "pearson-compounds": "Pearson-Higher-Ed/compounds"
+    "webpack-dev-server": "^1.12.1"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "pearson-compounds": "^0.1.0",
+    "pearson-elements": "^0.9.0"
   }
 }
